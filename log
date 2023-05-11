@@ -209,3 +209,18 @@ heap.c:46:29: error: invalid operands to binary / (have ‘char * (*)(const char
       |                        char * (*)(const char *, int)
 Compilation failed
 62f0a38
+Thu 11 May 2023 02:19:15 AM UTC: 
+ heap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:41:47: error: invalid operands to binary > (have ‘heapElem’ {aka ‘struct nodo’} and ‘int’)
+   41 |     while(indice > 0 && pq->heapArray[indice] > pq->heapArray[(indice-1)/2].priority)
+      |                         ~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                      |                                     |
+      |                                      heapElem {aka struct nodo}            int
+heap.c:44:22: error: array subscript is not an integer
+   44 |         pq->heapArray[index] = pq->heapArray[(indice-1)/2];
+      |                      ^
+Compilation failed
+5a81e71
