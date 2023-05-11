@@ -41,7 +41,7 @@ void heap_push(Heap* pq, void* data, int priority){
     while(indice > 0 && pq->heapArray[indice] > pq->heapArray[(indice-1)/2].priority)
     {
         heapElem swap = pq->heapArray[indice];
-        pq->heapArray[index] = pq->heapArray[(indice-1)/2];
+        pq->heapArray[indice] = pq->heapArray[(indice-1)/2];
         pq->heapArray[(indice-1)/2] = swap;
         indice = (indice - 1) / 2;
     }

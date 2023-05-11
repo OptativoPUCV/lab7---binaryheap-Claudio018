@@ -224,3 +224,15 @@ heap.c:44:22: error: array subscript is not an integer
       |                      ^
 Compilation failed
 5a81e71
+Thu 11 May 2023 02:19:29 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:41:47: error: invalid operands to binary > (have ‘heapElem’ {aka ‘struct nodo’} and ‘int’)
+   41 |     while(indice > 0 && pq->heapArray[indice] > pq->heapArray[(indice-1)/2].priority)
+      |                         ~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                      |                                     |
+      |                                      heapElem {aka struct nodo}            int
+Compilation failed
+f27b502
