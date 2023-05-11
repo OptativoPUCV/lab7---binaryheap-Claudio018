@@ -73,6 +73,7 @@ void heap_pop(Heap* pq){
             pq->heapArray[mayor] = swap;
             indice = mayor;
         }
+        else break;
         
     }
     
