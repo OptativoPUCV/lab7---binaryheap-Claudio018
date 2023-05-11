@@ -268,3 +268,14 @@ heap.c:61:13: error: unused variable ‘hijoIzq’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 f7ff8f3
+Thu 11 May 2023 03:02:36 PM UTC: 
+ heap.c | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_pop’:
+heap.c:63:13: error: variable ‘mayor’ set but not used [-Werror=unused-but-set-variable]
+   63 |         int mayor;
+      |             ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ef68a09
