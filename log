@@ -279,3 +279,15 @@ heap.c:63:13: error: variable ‘mayor’ set but not used [-Werror=unused-but-s
 cc1: all warnings being treated as errors
 Compilation failed
 ef68a09
+Thu 11 May 2023 03:06:38 PM UTC: 
+ heap.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+In file included from test.c:4:
+heap.c: In function ‘heap_pop’:
+heap.c:74:22: error: ‘max’ undeclared (first use in this function); did you mean ‘fmax’?
+   74 |             indice = max;
+      |                      ^~~
+      |                      fmax
+heap.c:74:22: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+35abe47

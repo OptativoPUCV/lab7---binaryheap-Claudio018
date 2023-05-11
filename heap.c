@@ -66,6 +66,13 @@ void heap_pop(Heap* pq){
         else   
             mayor = hijoIzq;
 
+        if(pq->heapArray[indice].priority < pq->heapArray[mayor].priority)
+        {
+            heapElem swap = pq->heapArray[indice];
+            pq->heapArray[indice] = pq->heapArray[mayor];
+            pq->heapArray[mayor] = swap;
+            indice = max;
+        }
         
     }
     
