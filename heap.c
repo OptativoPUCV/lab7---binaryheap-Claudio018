@@ -71,7 +71,7 @@ void heap_pop(Heap* pq){
             heapElem swap = pq->heapArray[indice];
             pq->heapArray[indice] = pq->heapArray[mayor];
             pq->heapArray[mayor] = swap;
-            indice = max;
+            indice = mayor;
         }
         
     }
