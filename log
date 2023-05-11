@@ -117,3 +117,14 @@ Thu 11 May 2023 02:00:53 AM UTC:
  tests:  1|3
 total_score: 10/70
 434d8d2
+Thu 11 May 2023 02:01:20 AM UTC: 
+ heap.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:4:
+heap.c: In function ‘heap_top’:
+heap.c:22:13: error: ‘Heap’ {aka ‘struct Heap’} has no member named ‘capacity’; did you mean ‘capac’?
+   22 |     if (pq->capacity == 0) return NULL;
+      |             ^~~~~~~~
+      |             capac
+Compilation failed
+1e8bf9a
