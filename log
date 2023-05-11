@@ -151,3 +151,9 @@ heap.c:32:26: error: ‘Heap’ {aka ‘struct Heap’} has no member named ‘c
       |                          capac
 Compilation failed
 f70a2dd
+Thu 11 May 2023 02:06:25 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|2
+total_score: 20/70
+a7789ca
