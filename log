@@ -140,3 +140,14 @@ Thu 11 May 2023 02:01:46 AM UTC:
  tests:  2|2
 total_score: 20/70
 165bae0
+Thu 11 May 2023 02:06:09 AM UTC: 
+ heap.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:32:26: error: ‘Heap’ {aka ‘struct Heap’} has no member named ‘capacity’; did you mean ‘capac’?
+   32 |         pq->capac = (pq->capacity * 2) + 1;
+      |                          ^~~~~~~~
+      |                          capac
+Compilation failed
+f70a2dd
