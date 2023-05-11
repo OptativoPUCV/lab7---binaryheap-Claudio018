@@ -74,7 +74,8 @@ void heap_pop(Heap* pq){
             indice = mayor;
         }
         else break;
-        
+
+        pq->size--;
     }
     
 
