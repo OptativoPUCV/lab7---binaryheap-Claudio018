@@ -25,3 +25,9 @@ heap.c:37:15: error: assignment to ‘int’ from ‘void *’ makes integer fro
 cc1: all warnings being treated as errors
 Compilation failed
 38c1054
+Thu 11 May 2023 01:54:03 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|4
+total_score: 0/70
+3d7da55
