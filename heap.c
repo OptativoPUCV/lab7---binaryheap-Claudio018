@@ -54,6 +54,7 @@ void heap_pop(Heap* pq){
     if(pq->size == 0) return;
 
     pq->heapArray[0] = pq->heapArray[pq->size - 1];
+    pq->size--;
     int indice = 0;
 
     while(pq->size > (2*indice) + 1)
@@ -77,7 +78,7 @@ void heap_pop(Heap* pq){
 
         
     }
-    pq->size--;
+    
 }
 
 Heap* createHeap(){
