@@ -248,3 +248,23 @@ Thu 11 May 2023 02:21:33 AM UTC:
  tests:  7|1
 total_score: 45/70
 84c4868
+Thu 11 May 2023 02:58:16 PM UTC: 
+ heap.c | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+In file included from test.c:4:
+heap.c: In function ‘heap_pop’:
+heap.c:61:23: error: incompatible types when initializing type ‘int’ using type ‘heapElem’ {aka ‘struct nodo’}
+   61 |         int hijoIzq = pq->heapArray[(2*indice) + 1],
+      |                       ^~
+heap.c:62:23: error: incompatible types when initializing type ‘int’ using type ‘heapElem’ {aka ‘struct nodo’}
+   62 |             hijoDer = pq->heapArray[(2*indice) + 2];
+      |                       ^~
+heap.c:62:13: error: unused variable ‘hijoDer’ [-Werror=unused-variable]
+   62 |             hijoDer = pq->heapArray[(2*indice) + 2];
+      |             ^~~~~~~
+heap.c:61:13: error: unused variable ‘hijoIzq’ [-Werror=unused-variable]
+   61 |         int hijoIzq = pq->heapArray[(2*indice) + 1],
+      |             ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f7ff8f3
